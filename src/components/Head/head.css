@@ -1,0 +1,14 @@
+.app_head{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    h1{
+        color: var(--color);
+        font-size: 32px;
+    }
+    p{
+        color: var(--fade-text-color);
+        letter-spacing: 1px;
+    }
+}

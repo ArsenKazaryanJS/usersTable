@@ -1,0 +1,91 @@
+.newUser_box {
+    width: 420px;
+    min-height: 60vh;
+    padding: 35px;
+    display: grid;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    animation: slideIn 1s ease-in-out; 
+    position: relative; 
+  }
+  
+  @keyframes slideIn {
+    0% {
+      left: -100%; 
+    }
+    100% {
+      left: 0; 
+    }
+  }
+  
+  h2 {
+    height: 30px;
+    font-size: 28px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 40px;
+  
+    input {
+      background-color: #cfdef348;
+      border: none;
+    }
+  
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        background-color: #cfdef34d;
+        border-radius: 5px;
+      }
+  
+      input:focus {
+        outline: none;
+        border-color: var(--color);
+        border: 1px solid var(--color);
+        box-shadow: 0 0 0 2px #7c3aed33;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        background-color: #cfdef34d;
+        border-radius: 5px;
+        border: 1px solid transparent; /* Default border */
+        transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    }
+    
+    select:focus {
+        outline: none; /* Remove default outline */
+        border-color: var(--color); /* Change border color on focus */
+        box-shadow: 0 0 0 2px #7c3aed33; /* Add shadow effect */
+    }
+    
+    option {
+        padding: 10px; /* Add padding for options */
+    }
+    }
+  
+    button {
+      color: #fff;
+      background-color: var(--color);
+      border: none;
+      padding: 6px;
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 7px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+  
